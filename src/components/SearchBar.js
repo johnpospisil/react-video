@@ -8,7 +8,7 @@ onInputChange = (event) => {
 };
 
 onFormSubmit = event => {
-  event.preventDefault(); // prevent the browser from refreshing when ENTER is pressed
+  event.preventDefault(); 
   // TODO: Make sure we call callback from parent component
 }
 
