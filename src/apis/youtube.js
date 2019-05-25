@@ -1,6 +1,6 @@
 import axios from 'axios'; //remember to 'npm install axios' in project terminal
 
-const KEY = 'AIzaSyCOX_g_sFUhUWGJZhd0JlY2Vpzf4AVBurk';
+const KEY = 'AIzaSyCOX_g_sFUhUWGJZhd0JlY2Vpzf4AVBukr';
 
 // https://developers.google.com/youtube/v3/docs/search/list
 export default axios.create({
