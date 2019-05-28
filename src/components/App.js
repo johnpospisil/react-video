@@ -27,8 +27,18 @@ class App extends React.Component {
         {/* The prop and callback do not have to have the same name, but usually do. */}
         {/* See below fro examples */}
         <SearchBar onFormSubmit={this.onTermSubmit}/>
-        <VideoDetail  video={this.state.selectedVideo}/>
-        <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+        <div className="ui grid">
+          <div className="ui row">
+            {/* Usee 11 of 16 columns */}
+            <div className="eleven wide column">
+              <VideoDetail  video={this.state.selectedVideo}/>
+            </div>
+            {/* Use 5 of 16 columns */}
+            <div className="five wide column">
+              <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
